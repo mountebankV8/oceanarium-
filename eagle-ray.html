@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Пятнистый орляк в атласе океанариума «Лазувей». Как его узнать и за чем понаблюдать.">
+  <meta name="theme-color" content="#081318">
+  <title>Пятнистый орляк — атлас океанариума «Лазувей»</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/ray-viewer.css">
+  <script src="assets/js/specimen-viewer.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Лазувей — главная">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Лазувей<small>Океанариум</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основное меню">
+        <a href="index.html#exposition">Маршрут</a>
+        <a href="index.html#inhabitants">Атлас</a>
+        <a href="tickets.html">Купить билет</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="specimen" id="main">
+    <article class="shell specimen-inner">
+      <a class="back-link" href="index.html#inhabitants"><span aria-hidden="true">←</span> К атласу обитателей</a>
+      <header class="specimen-intro">
+        <h1>Пятнистый <em>орляк.</em></h1>
+        <p>Проследи за его поворотом: когда скат наклоняется, белые пятна на спине становятся видны целиком.</p>
+      </header>
+      <figure class="specimen-figure" id="ray-viewer-title" data-specimen-viewer data-model="eagle-ray-data.js" aria-label="Пятнистый орляк — фото и 3D">
+        <div class="specimen-toolbar">
+          <i class="label specimen-name" lang="la">Aetobatus narinari</i>
+          <div class="specimen-modes" role="group" aria-label="Вид экспоната" hidden>
+            <button type="button" data-show-illustration aria-pressed="true" aria-controls="ray-photo">Фото</button>
+            <button type="button" data-show-model aria-pressed="false" aria-controls="ray-scene">3D</button>
+          </div>
+        </div>
+        <div class="specimen-window">
+          <div id="ray-photo" data-specimen-image>
+            <img src="assets/img/ray.webp" alt="Пятнистый орляк над рифом, длинный хвост вытянут позади" width="1280" height="961" fetchpriority="high">
+          </div>
+          <div id="ray-scene" data-specimen-scene hidden>
+            <div class="ray-stage">
+              <canvas tabindex="0" aria-label="Трёхмерная модель пятнистого орляка. Стрелки поворачивают модель, пробел включает или приостанавливает плавание."></canvas>
+            </div>
+          </div>
+        </div>
+        <figcaption class="specimen-caption">
+          <p data-image-caption>Пятнистый орляк над рифом · <a href="credits.html#ray-photo-credit">Фото Dan Schofield</a></p>
+          <p data-habitat-caption hidden>Среда обитания · <a href="credits.html#ray-habitat">Луг морских трав у Флорида-Кис</a></p>
+          <p class="ray-status" role="status"></p>
+        </figcaption>
+      </figure>
+      <div class="specimen-details">
+        <section>
+          <h2>Как узнать</h2>
+          <p>Тёмная спина усыпана светлыми пятнами, а грудные плавники образуют широкие заострённые «крылья». Спереди у орляка выступает плоское рыло.</p>
+        </section>
+        <section>
+          <h2>Что делает у дна</h2>
+          <p>При поиске пищи орляк может разрывать песок рылом. Он питается прежде всего моллюсками, раковины которых дробит плоскими зубными пластинами.</p>
+        </section>
+      </div>
+      <p class="specimen-source">Источник сведений о виде: <a href="https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/spotted-eagle-ray/" hreflang="en">Florida Museum of Natural History</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="index.html" aria-label="Лазувей — главная"><span class="brand-mark" aria-hidden="true"></span><span>Лазувей<small>Океанариум</small></span></a>
+      <p>Портфолио-концепт · <a class="photo-link" href="credits.html">Фотографии</a></p>
+      <a class="top-link" href="#top">Наверх <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

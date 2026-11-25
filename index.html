@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="«Свет здесь умеет плавать» — цифровая выставка океанариума «Лазувей». Три зала и цифровой атлас обитателей.">
+  <meta name="theme-color" content="#081318">
+  <title>Свет здесь умеет плавать — океанариум «Лазувей»</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/hero-motion.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Лазувей — главная">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Лазувей<small>Океанариум</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основное меню">
+        <a href="#exposition">Маршрут</a>
+        <a href="#inhabitants">Атлас</a>
+        <a href="tickets.html">Купить билет</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <button class="skip hero-motion-access" type="button" data-hero-motion hidden>
+        <span data-hero-motion-label>Пауза анимации</span>
+      </button>
+      <div class="hero-scene" aria-hidden="true">
+        <canvas class="hero-photo-motion" hidden></canvas>
+      </div>
+      <div class="hero-water-light" aria-hidden="true"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Свет здесь<br><em>умеет плавать.</em></h1>
+          <p class="hero-intro">От зарослей у берега до большого панорамного зала. Три остановки, чтобы вглядеться в жизнь под водой.</p>
+          <a class="solid-button" href="#exposition">Начать маршрут <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-foot label">
+          <a href="credits.html">На фото · Окинава</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="exposition" id="exposition" aria-labelledby="exposition-title">
+      <div class="shell">
+        <div class="section-intro">
+          <h2 id="exposition-title">Три остановки<br>под водой</h2>
+          <p>Начни у берега, задержись у медуз и закончи прогулку в панорамном зале.</p>
+        </div>
+        <ol class="rooms" role="list">
+          <li class="room room-coast">
+            <div class="room-image"><img src="assets/img/kelp.webp" alt="Золотистые ленты гигантских водорослей в бирюзовой воде" width="1280" height="851" loading="lazy"></div>
+            <div class="room-copy">
+              <h3>Лес водорослей</h3>
+              <p>Подними взгляд к свету и проследи, как течение раскачивает длинные ленты ламинарии.</p>
+              <ul class="room-facts" role="list">
+                <li>Глубина: 4 метра</li>
+                <li>Температура: +10°C</li>
+                <li>Остановка 1 из 3</li>
+              </ul>
+              <span class="room-number" aria-hidden="true">01</span>
+            </div>
+          </li>
+          <li class="room room-jelly">
+            <div class="room-image"><img src="assets/img/jelly.webp" alt="Розоватый купол медузы и длинные щупальца на синем фоне" width="1280" height="852" loading="lazy"></div>
+            <div class="room-copy">
+              <h3>Зал медуз</h3>
+              <p>Выбери одну медузу взглядом. Видно, как сокращается её купол и как щупальца тянутся за ним.</p>
+              <ul class="room-facts" role="list">
+                <li>Глубина: 12 м</li>
+                <li>Подсветка: био-спектр</li>
+                <li>Остановка 2 из 3</li>
+              </ul>
+              <span class="room-number" aria-hidden="true">02</span>
+            </div>
+          </li>
+          <li class="room room-open">
+            <div class="room-image"><img src="assets/img/hero.webp" alt="Силуэты посетителей у большого окна океанариума Тюрауми" width="2400" height="1602" loading="lazy"></div>
+            <div class="room-copy">
+              <h3>Панорамный зал</h3>
+              <p>Здесь удобно смотреть издалека. Так легче увидеть, как меняется строй стаи и как движется скат.</p>
+              <ul class="room-facts" role="list">
+                <li>Глубина: 25 м</li>
+                <li>Обзор: 270 градусов</li>
+                <li>Остановка 3 из 3</li>
+              </ul>
+              <span class="room-number" aria-hidden="true">03</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="atlas" id="inhabitants" aria-labelledby="atlas-title">
+      <div class="shell">
+        <p class="label atlas-name" id="atlas-title">Атлас обитателей</p>
+        <div class="atlas-layout">
+          <figure class="atlas-figure">
+            <img src="assets/img/ray.webp" alt="Пятнистый орляк плывёт над рифом с поднятым плавником" width="1280" height="961" loading="lazy">
+            <figcaption class="label">Aetobatus narinari</figcaption>
+          </figure>
+          <div class="atlas-copy">
+            <h2><a href="eagle-ray.html">Пятнистый<br>орляк</a></h2>
+            <p>Когда орляк разворачивается, на его тёмной спине видны белые пятна. Широкие грудные плавники движутся как крылья.</p>
+            <a class="line-link" href="eagle-ray.html">Фото и 3D орляка <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="atlas-layout">
+          <figure class="atlas-figure">
+            <img src="assets/img/purple-jelly.webp" alt="Медуза со светлым куполом в пурпурных полосах и длинными щупальцами в толще воды" width="1440" height="960" loading="lazy">
+            <figcaption class="label" lang="la">Chrysaora colorata</figcaption>
+          </figure>
+          <div class="atlas-copy">
+            <h2><a href="purple-jelly.html">Пурпурно&shy;полосая<br>медуза</a></h2>
+            <p>Светлый купол пересекают пурпурные полосы. Под ним тянутся тонкие, почти прозрачные щупальца.</p>
+            <a class="line-link" href="purple-jelly.html">О медузе <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="atlas-layout">
+          <figure class="atlas-figure">
+            <img src="assets/img/lined-seahorse.webp" alt="Жёлто-оливковый полосатый морской конёк обвивает хвостом веточку под водой" width="1280" height="853" loading="lazy">
+            <figcaption class="label" lang="la">Hippocampus erectus</figcaption>
+          </figure>
+          <div class="atlas-copy">
+            <h2><a href="lined-seahorse.html">Полосатый<br>морской конёк</a></h2>
+            <p>Конёк обвивает растения цепким хвостом. В толще воды его ведёт небольшой спинной плавник.</p>
+            <a class="line-link" href="lined-seahorse.html">О морском коньке <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="index.html" aria-label="Лазувей — главная"><span class="brand-mark" aria-hidden="true"></span><span>Лазувей<small>Океанариум</small></span></a>
+      <p>Портфолио-концепт · <a class="photo-link" href="credits.html">Фотографии</a></p>
+      <a class="top-link" href="#top">Наверх <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
